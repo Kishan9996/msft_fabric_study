@@ -29,5 +29,32 @@
       "mode": "production"
     }
   },
-  "entities": {}
+  "entities": {
+    "msftfabircuserstudy": {
+      "source": {
+        "object": "*.*",
+        "type": "table"
+      },
+      "graphql": {
+        "enabled": true,
+        "type": {
+          "singular": "msftfabircuserstudy",
+          "plural": "msftfabircuserstudies"
+        }
+      },
+      "rest": {
+        "enabled": true
+      },
+      "permissions": [
+        {
+          "role": "anonymous",
+          "actions": [
+            {
+              "action": "*"
+            }
+          ]
+        }
+      ]
+    }
+  }
 }
