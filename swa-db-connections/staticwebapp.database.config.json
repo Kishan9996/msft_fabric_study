@@ -84,7 +84,7 @@
     },
     "SalesOrderDetail": {
       "source": {
-        "object": "<schema>.<table>",
+        "object": "SalesLT.SalesOrderDetail",
         "type": "table"
       },
       "graphql": {
