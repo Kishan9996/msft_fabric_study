@@ -55,6 +55,32 @@
           ]
         }
       ]
+    },
+    "<entity-name>": {
+      "source": {
+        "object": "<schema>.<table>",
+        "type": "table"
+      },
+      "graphql": {
+        "enabled": true,
+        "type": {
+          "singular": "<entity-name>",
+          "plural": "<entity-name>s"
+        }
+      },
+      "rest": {
+        "enabled": true
+      },
+      "permissions": [
+        {
+          "role": "anonymous",
+          "actions": [
+            {
+              "action": "*"
+            }
+          ]
+        }
+      ]
     }
   }
 }
